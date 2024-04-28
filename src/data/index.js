@@ -46,6 +46,92 @@ const Nav_Setting = [
   },
 ];
 
+const MembersList=[
+  {
+    id:0,
+    img:faker.image.avatar(),
+    name:faker.name.firstName(),
+    online:true  },
+  {
+    id:1,
+    img:faker.image.avatar(),
+    name:faker.name.firstName(),
+    online:false
+  },
+  {
+    id:2,
+    img:faker.image.avatar(),
+    name:faker.name.firstName(),
+    online:false
+  },
+  {
+    id:3,
+    img:faker.image.avatar(),
+    name:faker.name.firstName(),
+    online:true
+  },
+  {
+    id:4,
+    img:faker.image.avatar(),
+    name:faker.name.firstName(),
+    online:true
+
+  },
+]
+const CallLogs=[
+  {
+    id:0,
+    img:faker.image.avatar(),
+    name:faker.name.firstName(),
+    missed:false,
+    incoming:true,
+    pinned:true,
+    online:true
+
+  },
+  {
+    id:1,
+    img:faker.image.avatar(),
+    name:faker.name.firstName(),
+    missed:true,
+    incoming:false,
+    pinned:false,
+    online:false
+
+
+  },
+  {
+    id:2,
+    img:faker.image.avatar(),
+    name:faker.name.firstName(),
+    missed:false,
+    incoming:true,
+    pinned:false,
+    online:true
+
+
+  },
+  {
+    id:3,
+    img:faker.image.avatar(),
+    name:faker.name.firstName(),
+    missed:true,
+    incoming:true,
+    pinned:false,
+    online:true
+
+  },
+  {
+    id:4,
+    img:faker.image.avatar(),
+    name:faker.name.firstName(),
+    missed:false,
+    incoming:true,
+    pinned:false,
+    online:false
+
+  },
+]
 const ChatList = [
   {
     id: 0,
@@ -219,12 +305,35 @@ const Message_options = [
     title: "Delete Message",
   },
 ];
-
+const SHARED_LINKS=[
+  {
+    type: "msg",
+    subtype: "link",
+    preview: faker.image.cats(),
+    message: "Yep, I can also do that",
+    incoming: true,
+    outgoing: false,
+  },
+]
+const SHARED_DOCS=[
+  {
+    type: "msg",
+    subtype: "doc",
+    message: "Yes sure, here you go.",
+    incoming: true,
+    outgoing: false,
+  },
+ 
+]
 export {
   Profile_Menu,
   Nav_Setting,
   Nav_Buttons,
+  CallLogs,
   ChatList,
   Chat_History,
   Message_options,
+  SHARED_LINKS,
+  MembersList,
+  SHARED_DOCS
 };
