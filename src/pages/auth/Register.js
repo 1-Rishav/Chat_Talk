@@ -17,12 +17,12 @@ function Register() {
         </Stack>
         {/* Register Form */}
         <RegisterForm/>
-        <Typography component={"div"} sx={{color:"text.secondary",mt:3,typography:"caption",textAlign:"center"}}>{'By signing up, I agree to'}
-        <Link underline="always" color="text.primary">
+        <Typography component={"div"} sx={{color:"text.secondary",mt:3,typography:"caption",textAlign:"center",cursor:"pointer"}}>{'By signing up, I agree to '}
+        <Link  underline="always" variant='subtitle2'>
             Terms of service
         </Link>
-        {'and'}
-        <Link underline="always" color="text.primary">
+        {' and '}
+        <Link underline="always" variant='subtitle2'>
             Privacy Policy
         </Link>
         </Typography>
